@@ -1,0 +1,13 @@
+{
+  "name": "lab-data",
+  "version": "0.1.0",
+  "description": "Data engineering and analysis commands for the lab workspace",
+  "contextFileName": "GEMINI.md",
+  "excludeTools": ["run_shell_command(rm)", "run_shell_command(git push)"],
+  "mcpServers": {
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://localhost:5432/lab"]
+    }
+  }
+}

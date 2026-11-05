@@ -1,0 +1,8 @@
+description = "Profile the dataset at the given path and write reports/profile.md"
+prompt = """
+Follow the eda-profile skill. Profile the dataset at {{args}}:
+shape, grain in one sentence, keys and duplicates, per-column nulls/distinct/top values,
+time range, numeric distribution and outliers, and any leakage column.
+Write reports/profile.md and reports/profile.json. Run a script, do not eyeball.
+Start by stating the grain and the row count, then list the flags you found.
+"""

@@ -1,0 +1,7 @@
+description = "Run the dbt pipeline and summarize what changed"
+prompt = """
+Run `dbt build --select {{args}}` from the warehouse directory.
+If it fails, show the failing model, the compiled SQL excerpt and the error, then fix only that model.
+If it passes, report: models built, tests passed/failed, rows changed per model (from dbt's output), and runtime.
+Never touch migrations/ or a production schema.
+"""
