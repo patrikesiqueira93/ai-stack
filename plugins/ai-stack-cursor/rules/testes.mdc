@@ -1,0 +1,14 @@
+---
+description: Test and verification bar for any change
+globs: ["**/*.test.*", "**/*.spec.*", "**/tests/**", "**/__tests__/**"]
+alwaysApply: false
+---
+
+# Testing rules
+
+- A new behaviour gets a test that fails without the change.
+- Assert what the user sees or what the contract promises — not internal calls, not CSS classes.
+- No snapshot of a whole page; snapshot the small piece whose change you want to notice.
+- Never `.skip`, never `--no-verify`, never a loosened assertion to get green.
+- A bug fix starts with the test that reproduces the bug.
+- Web: vitest. Python: pytest. Contract: against the OpenAPI file.

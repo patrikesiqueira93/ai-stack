@@ -1,0 +1,16 @@
+{
+  "name": "ai-stack-marketplace",
+  "owner": {
+    "name": "Patrik E. Siqueira"
+  },
+  "metadata": {
+    "description": "Kit de contexto, skills e guardrails para agentes de código."
+  },
+  "plugins": [
+    {
+      "name": "ai-stack",
+      "source": "./plugins/ai-stack-claude",
+      "description": "6 skills portáveis + hook PostToolUse bloqueante."
+    }
+  ]
+}

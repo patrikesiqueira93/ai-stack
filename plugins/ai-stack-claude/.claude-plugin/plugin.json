@@ -1,0 +1,19 @@
+{
+  "name": "ai-stack",
+  "displayName": "ai-stack — back end, harness e ciência de dados",
+  "version": "0.2.0",
+  "description": "6 skills portáveis e o hook PostToolUse que barra edição com lint vermelho.",
+  "author": {
+    "name": "Patrik E. Siqueira"
+  },
+  "repository": "https://github.com/patrikesiqueira93/ai-stack",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "api",
+    "harness",
+    "evals",
+    "data-science"
+  ],
+  "hooks": "./hooks/hooks.json"
+}

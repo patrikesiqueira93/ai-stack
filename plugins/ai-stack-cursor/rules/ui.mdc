@@ -1,0 +1,20 @@
+---
+description: React and TypeScript UI work — components, screens, forms, tables inside the web app
+globs: ["**/*.tsx", "**/*.jsx", "**/*.css", "**/components/**", "**/app/**"]
+alwaysApply: false
+---
+
+# UI rules
+
+Load the skill `front-component` before writing a component. It carries the build order and the
+accessibility checklist.
+
+Hard rules:
+
+- Design tokens only. No hex colour, no magic spacing in a component file.
+- Every component handles `loading`, `empty`, `error`, `ready`.
+- Semantic element first: `button`, `table`, `dialog`, `form`. A clickable `div` needs `role`, `tabIndex` and a key handler.
+- Icon-only control gets `aria-label`.
+- Data down, events up. A child never fetches what the parent already has.
+- One render test per state, one interaction test for the primary action.
+- Respect `prefers-reduced-motion`.

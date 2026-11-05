@@ -1,0 +1,19 @@
+{
+  "name": "ai-stack",
+  "displayName": "ai-stack — contexto e skills por domínio",
+  "version": "0.2.0",
+  "description": "Núcleo de contexto e 6 skills portáveis (front end, API, EDA, experimento, harness de agente, Transformer). Regras por glob para front end.",
+  "author": {
+    "name": "Patrik E. Siqueira"
+  },
+  "repository": "https://github.com/patrikesiqueira93/ai-stack",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "front-end",
+    "api",
+    "data",
+    "evals",
+    "transformer"
+  ]
+}
