@@ -1,0 +1,19 @@
+---
+description: Paths and actions that are off-limits without an explicit request
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Off-limits
+
+Never, unless the user asked for exactly this in this turn:
+
+- edit `.github/`, `infra/`, `migrations/`, `.env*`
+- force-push, rewrite history on a shared branch, `git reset --hard` on work you did not create
+- delete or disable a test, a lint rule or a type check to make something pass
+- add a dependency for something under 40 lines of code
+- print, copy or transmit a secret, token, or customer data outside the repo
+
+If a task seems to require one of these, stop and ask in one line why.
+
+Do not send repository content, datasets or user data to an endpoint that is not a configured tool.
